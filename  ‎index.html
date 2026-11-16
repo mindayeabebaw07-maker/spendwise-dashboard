@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpendWise - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="logo">💰 SpendWise</div>
+      <nav class="nav">
+        <a href="#" class="nav-link active">📊 Dashboard</a>
+        <a href="#" class="nav-link">💳 Transactions</a>
+        <a href="#" class="nav-link">📁 Categories</a>
+        <a href="#" class="nav-link">🎯 Budgets</a>
+        <a href="#" class="nav-link">📈 Reports</a>
+        <a href="#" class="nav-link">⚙️ Settings</a>
+      </nav>
+      <div class="user-card">
+        <div class="avatar">JK</div>
+        <div>
+          <p class="user-name">John Kamau</p>
+          <p class="user-email">john@email.com</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HEADER -->
+      <header class="header">
+        <div>
+          <h1>Good Morning, John 👋</h1>
+          <p>Here's your spending overview for November 2026</p>
+        </div>
+        <div class="header-actions">
+          <input type="search" placeholder="Search transactions..." class="search">
+          <button class="btn">+ Add Expense</button>
+        </div>
+      </header>
+
+      <!-- SUMMARY -->
+      <section class="summary">
+        <div class="summary-item">
+          <span>Total Balance</span>
+          <strong>Ksh 48,500</strong>
+        </div>
+        <div class="summary-item">
+          <span>Total Spent</span>
+          <strong class="red">Ksh 32,400</strong>
+        </div>
+        <div class="summary-item">
+          <span>Total Saved</span>
+          <strong class="green">Ksh 16,100</strong>
+        </div>
+      </section>
+
+      <!-- CATEGORY CARDS - GRID -->
+      <section class="cards">
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">🍔</span><span class="badge">Food</span></div>
+          <h3>Ksh 8,200</h3>
+          <p>42 transactions • 25% of budget</p>
+          <div class="progress"><div class="fill food"></div></div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">🚌</span><span class="badge">Transport</span></div>
+          <h3>Ksh 4,500</h3>
+          <p>28 transactions • 14% of budget</p>
+          <div class="progress"><div class="fill transport"></div></div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">🏠</span><span class="badge">Rent</span></div>
+          <h3>Ksh 12,000</h3>
+          <p>1 transaction • 37% of budget</p>
+          <div class="progress"><div class="fill rent"></div></div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">🎬</span><span class="badge">Entertainment</span></div>
+          <h3>Ksh 3,100</h3>
+          <p>12 transactions • 10% of budget</p>
+          <div class="progress"><div class="fill entertainment"></div></div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">💰</span><span class="badge">Savings</span></div>
+          <h3>Ksh 16,100</h3>
+          <p>Goal: Ksh 20,000 • 80% reached</p>
+          <div class="progress"><div class="fill savings"></div></div>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-top"><span class="icon">💡</span><span class="badge">Utilities</span></div>
+          <h3>Ksh 4,600</h3>
+          <p>6 transactions • 14% of budget</p>
+          <div class="progress"><div class="fill utilities"></div></div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>
